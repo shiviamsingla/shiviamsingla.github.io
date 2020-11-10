@@ -1,0 +1,43 @@
+*{
+	max-width: 100%;
+}
+body{
+	background-image: linear-gradient(90deg,white,grey,black);
+}
+.navbar-brand{
+	font-family: 'Big Shoulders Stencil Text', cursive;
+	font-size: 1.5rem;
+	margin-left: 10px;
+}
+.heading{
+	font-family: 'Big Shoulders Stencil Text', cursive;
+	font-size: 2rem;
+	text-align: center;
+	text-shadow: 1px 1px 1px white;
+}
+.hello{
+	width:80%;
+	font-family: 'Nunito', sans-serif;
+}
+#myimage{
+	height: 300px;
+	filter: brightness(80%);
+}
+figcaption{
+	text-align: center;
+	font-style: italic;
+	color: white;
+}
+.social-icons{
+	color: white;
+}
+#section2{
+	background-color: black;
+	background-image: url(bg-for-section2.jpg);
+	background-blend-mode: difference;
+	background-repeat: no-repeat;
+	background-position: fixed;
+}
+#section5{
+	font-family: 'Nunito', sans-serif;
+}
