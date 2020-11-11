@@ -14,6 +14,7 @@
 	<!-- Google Fonts import END -->
 	<script src="https://use.fontawesome.com/95752824f1.js"></script>
 	<link rel="stylesheet" type="text/css" href="custom_style.css">
+	<script defer src="custom_script.js" type="text/javascript"></script>
 </head>
 <body>
 	<header class="fluid">
@@ -26,17 +27,22 @@
 				<li class="nav-item"><a href="#section5" class="nav-link text-warning">Hire Me</a></li>
 			</ul>
 	</header>
-	<section class="fluid mt-2" id="section1">
+	<section class="fluid" id="section1">
 		<div class="row">
 			<div class="col-12 col-sm-6 col-md-6 d-flex flex-column justify-content-center align-items-center">
-				<h3 class="hello animate__animated animate__bounce animate__repeat-2">Hello,<br>My Name is <span id="myname">Shiviam Singla</span></h3>
+				<h3 class="hello animate__animated animate__bounce animate__repeat-2">Hello,<br>My Name is
+					<span id="myname">Shiviam Singla</span>
+					<span onclick="pronounce()" class="text-warning" style="cursor: pointer;">
+						<i class="fa fa-volume-up" aria-hidden="true"></i>
+					</span>
+				</h3>
 				<p class="hello">
 					Welcome to my Portfolio. I am a Professional Developer and a Ethical Hacker.
 				</p>
 				<a class="btn btn-outline-dark animate__animated animate__pulse animate__repeat-2" role="button" href="resume.pdf">Download Resume</a>
 			</div>
 			<div class="col-12 col-sm-6 col-md-6 d-flex flex-column justify-content-center align-items-center pt-3">
-				<figure><img src="me.jpg" id="myimage" class="animate__animated animate__slow animate__backInUp animate__repeat-1"><figcaption>Shiviam Singla</figcaption></figure>
+				<figure><img src="me.jpg" id="myimage" class="animate__animated animate__slow animate__backInUp animate__repeat-1" draggable="false"><figcaption>Shiviam Singla</figcaption></figure>
 				<div class="row">
 					<a href="https://github.com/shiviamsingla" class="col social-icons"><i class="fa fa-github" aria-hidden="true"></i></a>
 					<a href="#" class="col social-icons"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
