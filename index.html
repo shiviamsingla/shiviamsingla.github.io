@@ -19,8 +19,9 @@
 	<script defer src="custom_script.js" type="text/javascript"></script>
 </head>
 <body>
-	<header class="fluid">
-			<ul class="nav bg-dark p-1">
+	<div class="min-vh-100 fluid">
+	<header class="fluid" style="background-color: rgba(0,0,0,0.7); position: fixed; width: 100%; z-index: 50;">
+			<ul class="nav p-1">
 				<h1 class="navbar-brand text-light">My Portfolio</h1>
 				<li class="nav-item border-bottom border-warning"><a href="#section1" class="nav-link text-warning">Home</a></li>
 				<li class="nav-item"><a href="#section2" class="nav-link text-warning">About</a></li>
@@ -29,8 +30,8 @@
 				<li class="nav-item"><a href="#section6" class="nav-link text-warning">Certificates</a></li>
 				<li class="nav-item"><a href="#section5" class="nav-link text-warning">Hire Me</a></li>
 			</ul>
-	</header>
-	<section class="fluid mt-2" id="section1">
+	</header><br><br><br><br>
+	<section class="fluid m-auto" id="section1">
 		<div class="row">
 			<div class="col-12 col-sm-6 col-md-6 d-flex flex-column justify-content-center align-items-center">
 				<h3 class="hello animate__animated animate__bounce animate__repeat-2">Hello,<br>I am <span id="myname">Shiviam Singla</span>
@@ -54,7 +55,8 @@
 			</div>
 		</div>
 	</section>
-	<section id="section2" class="fluid mt-5 mb-5 p-4 text-light">
+	</div>
+	<section id="section2" class="fluid mt-5 mb-5 p-3 text-light min-vh-100">
 		<h1 class="heading">About Me (My Story)</h1>
 		<ul>
 			<li>Shiviam Singla lives in Punjab (India), I'm 19 years old. Thanks for spending your valueable time on my portfolio.</li>
@@ -76,21 +78,21 @@
 	<section class="container mt-2 mb-2" id="section3">
 		<h1 class="heading">Skills & Technologies</h1>
 		<div class="container row">
-			<div class="col-12 col-sm bg-light p-2 m-1">
+			<div class="col-12 col-sm bg-light p-2 m-1 rounded-top skillTile">
 				<img src="skill-logo-1.jpg">
 				<p><span style="font-weight:bold;">Front End Web-Design Skills -</span><br>HTML, CSS, JavaScript, Wordpress, Bootstrap, React</p>
 			</div>
-			<div class="col-12 col-sm bg-light p-2 m-1">
+			<div class="col-12 col-sm bg-light p-2 m-1 rounded-top skillTile">
 				<img src="skill-logo-2.jpg">
 				<p><span style="font-weight:bold;">Development Skills -</span><br> Linux System Administration, Python, PHP, C, C++, Git, AWS etc.</p>
 			</div>
 		</div>
 		<div class="container row">
-			<div class="col-12 col-sm bg-light p-2 m-1">
+			<div class="col-12 col-sm bg-light p-2 m-1 rounded-top skillTile">
 				<img src="skill-logo-3.png">
 				<p><span style="font-weight:bold;">Cyber Security Skills - </span><br> Pentesting with Kali, Bug Hunter (Resolved reports with 2+ companies), CTF Player (@Oliver123 - TryHackMe)</p>
 			</div>
-			<div class="col-12 col-sm bg-light p-2 m-1">
+			<div class="col-12 col-sm bg-light p-2 m-1 rounded-top skillTile">
 				<img src="skill-logo-4.jpg">
 				<p><span style="font-weight:bold;">Other Skills - </span><br> Digital Marketer certified by Google, State Level Typing Winner with speed of 60 WPM</p>
 			</div>
@@ -99,12 +101,12 @@
 	<section class="container mt-2 mb-2" id="section4">
 		<h1 class="heading">Projects by Me</h1>
 		<div class="container row">
-			<div class="col-12 col-sm bg-light p-3 m-1">
+			<div class="col-12 col-sm bg-light p-3 m-1 rounded projectTile">
 				<p><span style="font-weight:bold; display:block; width:70%; background-image: linear-gradient(90deg,black,white); padding: 5px; color:white;">Magic Square Generator</span>Magic Square Generator is a very simple HTML, CSS, and JS Project, that generate a magic square of DOB selected by User.</p>
 				<a class="btn btn-outline-success" role="button" href="https://github.com/shiviamsingla/magic-square-generator/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Check on Github</a>
 				<a class="btn btn-outline-dark" role="button" href="https://shiviamsingla.github.io/magic-square-generator/" target="_blank">Go to Project</a>
 			</div>
-			<div class="col-12 col-sm bg-light p-3 m-1">
+			<div class="col-12 col-sm bg-light p-3 m-1 rounded projectTile">
 				<p><span style="font-weight:bold; display:block; width:70%; background-image: linear-gradient(90deg,black,white); padding: 5px; color:white;">TypingCert -</span>TypingCert is a project create with tailwind CSS. It helps a user to check typing speed and accuracy. It provides a good user Interface and Certificate of Result.</p>
 				<a class="btn btn-outline-success" role="button" href="https://github.com/shiviamsingla/typingCert/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>Check on Github</a>
 				<a class="btn btn-outline-dark" role="button" href="https://shiviamsingla.github.io/TypingCert/" target="_blank">Go to Project</a>
@@ -117,7 +119,7 @@
 			<div class="reel">
 				<img src="certs/1.png">
 				<img src="certs/2.jpg">
-				<img src="certs/3.jpg">
+				<img src="certs/3.png">
 			</div>
 		</div>
 		<div class="d-flex justify-content-center">

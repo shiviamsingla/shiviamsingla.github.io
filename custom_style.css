@@ -1,11 +1,12 @@
 *{
 	max-width: 100%;
+	line-height: 1.7;
 }
 html{
 	scroll-behavior: smooth;
 }
 body{
-	background-image: linear-gradient(90deg,white,grey,black);
+	background-image: linear-gradient(90deg,crimson,black);
 }
 .navbar-brand{
 	font-family: 'Big Shoulders Stencil Text', cursive;
@@ -16,7 +17,8 @@ body{
 	font-family: 'Big Shoulders Stencil Text', cursive;
 	font-size: 2rem;
 	text-align: center;
-	text-shadow: 1px 1px 1px white;
+	text-shadow: 1px 1px 1px yellow;
+	color: white;
 }
 .hello{
 	width:80%;
@@ -26,20 +28,28 @@ body{
 	height: 300px;
 	filter: brightness(80%);
 }
+#section1 *{
+	color:white;
+}
 figcaption{
 	text-align: center;
 	font-style: italic;
-	color: white;
 }
 .social-icons{
 	color: white;
 }
 #section2{
-	background-color: black;
-	background-image: url(bg-for-section2.jpg);
-	background-blend-mode: difference;
+	box-shadow:0px 0px 0px 2px white inset;
+	background-image: url(bg-for-section2.jpg), linear-gradient(to right,black,#AA0000,black);
+	background-blend-mode: lighten;
 	background-repeat: no-repeat;
 	background-position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#section2 *{
+	line-height: 2.0;
 }
 #section5{
 	font-family: 'Nunito', sans-serif;
@@ -50,8 +60,8 @@ figcaption{
 	display: flex;
 }
 #section6 .slide{
-	width: 80%;
-	max-width: 80%;
+	width: 90%;
+	max-width: 90%;
 	height: auto;
 	overflow-x: scroll;
 }
@@ -60,4 +70,20 @@ figcaption{
 	max-width: 100%;
 	display: block;
 	float: left;
+}
+
+/*New Updates*/
+.projectTile{
+	border: 2px solid white;
+}
+.projectTile:hover{
+	border: 2px solid rgba(0,200,0,0.7);
+	transition: 0.2s;
+}
+.skillTile{
+	scale:0.95;
+	transition: 0.5s;
+}
+.skillTile:hover{
+	scale: 1;
 }
