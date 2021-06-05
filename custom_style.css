@@ -54,23 +54,6 @@ figcaption{
 #section5{
 	font-family: 'Nunito', sans-serif;
 }
-#section6 .reel{
-	width: 300%;
-	max-height: 70vh;
-	display: flex;
-}
-#section6 .slide{
-	width: 90%;
-	max-width: 90%;
-	height: auto;
-	overflow-x: scroll;
-}
-#section6 img{
-	width: 100%;
-	max-width: 100%;
-	display: block;
-	float: left;
-}
 
 /*New Updates*/
 .projectTile{
